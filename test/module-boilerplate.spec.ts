@@ -1,18 +1,16 @@
 /// <reference path="../node_modules/@types/mocha/index.d.ts" />
 /// <reference path="../node_modules/@types/node/index.d.ts" />
-/// <reference path="../node_modules/typescript/lib/lib.es2018.full.d.ts" />
 
-/************************************** THIRD-PARTY IMPORTS ***************************************/
+/*------------------------------------- THIRD-PARTY MODULES --------------------------------------*/
 import {expect} from 'chai';
-import sinon from 'sinon';
 
 import fs from 'fs';
 import path from 'path';
 
-/*********************************** IMPORT FILES TO BE TESTED ************************************/
+/*---------------------------------- IMPORT FILES TO BE TESTED -----------------------------------*/
 import {nodeModuleBoilerplate} from '../index';
 
-/********************************************* TESTS **********************************************/
+/*-------------------------------------------- TESTS ---------------------------------------------*/
 describe(`nodeModuleBoilerplate`, function() {
     it(`exists`, function() {
         expect(nodeModuleBoilerplate).to.exist;
